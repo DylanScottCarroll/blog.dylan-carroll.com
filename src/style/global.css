@@ -1,0 +1,123 @@
+
+body {
+    font-family: -apple-system, system-ui, sans-serif;
+    margin: 0px;
+}
+
+div.site-wrapper {
+    display: flex;
+    justify-content: center;
+    
+    margin: 0;
+    padding: 0px;
+
+}
+
+
+.nav-header {
+    display: grid;
+    grid-template-columns: auto 1fr 100px;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+
+    margin-top: 20px;
+}
+
+.nav-header > img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.nav-header > div >  h2 {
+    font-size: 40;
+    margin: 0px;
+}
+
+.nav-header * {
+    color: inherit;
+    font-size: 20;
+    text-align: center;
+}
+
+
+
+.nav-aside {
+    margin: 100px 40px auto 0;
+    width: 180px;
+    flex-shrink: 0;
+
+    display: grid;
+    grid-template-columns: 1fr 10px 1fr;
+    grid-template-rows: 20px, 5px, 10px, 20px;
+    
+    column-gap: 5px;
+}
+
+.nav-aside > * {
+    margin: 5px 0;
+    color: inherit
+}
+
+.nav-aside > img,
+.nav-aside > .na-name{
+    grid-column: 1 / 4;
+    justify-self: center;
+}
+
+.na-name {
+    color: inherit;
+    font-weight: 600;
+}
+
+.nav-aside > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.nav-aside > .na-left {
+    justify-self: end;
+}
+
+.nav-aside > .na-center {
+    justify-self: center;
+}
+
+.nav-aside > .na-right {
+    justify-self: start;
+}
+
+
+
+main {
+    max-width: 800px;
+    width: 85%;
+
+    margin-top: 40px;
+}
+
+.article-header>* {
+    margin: 0px;
+    line-height: 40px;
+}
+
+
+/* Text Formatting */
+
+h1 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 20px;
+}
+
+p.subtitle {
+    font-size: 30px;
+}
+
+p.post-metadata {
+    color: grey;
+}
